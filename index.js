@@ -1,18 +1,19 @@
 const getSchemeBtn = document.getElementById("get-scheme-btn");
-const colorPicker = document.getElementById("color-select");
 
 getSchemeBtn.addEventListener("click", () => {
     const modeSelect = document.getElementById("mode-select");
+	const colorSelect = document.getElementById("color-select");
     let colorsArr = [];
     
-    fetch(`https://www.thecolorapi.com/scheme?hex=0047AB&mode=${modeSelect.value}`, {method: "GET"})
-    .then(res => res.json())
-    .then(scheme => {
-        scheme.colors.forEach((color) => {
-            colorsArr.push(color.hex.value);
-        })
-        console.log(colorsArr);
-        setColors(colorsArr);
+	console.log(`https://www.thecolorapi.com/scheme?hex=${colorSelect.value.replace("#", "")}&mode=${modeSelect.value}`);
+    fetch(`https://www.thecolorapi.com/scheme?hex=${colorSelect.value.replace("#", "")}&mode=${modeSelect.value}`, {method: "GET"})
+		.then(res => res.json())
+		.then(scheme => {
+			scheme.colors.forEach((color) => {
+				colorsArr.push(color.hex.value);
+			})
+			console.log(colorsArr);
+			setColors(colorsArr);
     });
     
 });

@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    /* border: 2px solid red; */
 }
 html, body {
     margin: 0;
@@ -9,19 +10,50 @@ html, body {
 header {
     display: flex;
     justify-content: space-around;
-    height: 4rem;
+    /* height: 4rem; */
     padding: 1rem;
-    background-color: black;
+    background-color: #1F2937;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header select {
+    background-color: #1F2937;
+    color: #D5D4D8;
+    border: 1px solid #D1D5DB;
+    border-radius: 7px;
+    padding: 0.5rem;
+}
+
+header button {
+    background-color: #3D4B60;
+    border-radius: 7px;
+    border: none;
+    color: #D5D4D8;
+    padding: 1rem;
+}
+
+header button:focus, header button:hover {
+    cursor: pointer;
+    background-color: #4e5f79;
+}
+
+header input {
+    margin: auto 0;
 }
 
 .color-scheme {
-    height: 90vh;
+    height: 100vh;
     font-size: 0.65rem;
     display: grid;
     text-align: center;
     grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 9fr 1fr;
 }
 
 .color-text {
     order: 1;
+    margin: auto;
 }
