@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    height: 4rem;
+    padding: 1rem;
+    background-color: black;
+}
+
+.color-scheme {
+    height: 90vh;
+    font-size: 0.65rem;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.color-text {
+    order: 1;
+}
