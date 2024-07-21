@@ -1,11 +1,7 @@
-# Getting Started
-Install the dependencies and run the project
-```
-npm install
-npm start
-```
+# [Color Scheme Generator](https://kwidmer64-color-scheme-generator.netlify.app/)
+A color scheme generator I made while learning how to implement APIs in the web development course on [scrimba.com](https://v2.scrimba.com/home).
+A design document was provided by Scrimba for this project.
 
-Head over to https://vitejs.dev/ to learn more about configuring vite
 ## About Scrimba
 
 At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
