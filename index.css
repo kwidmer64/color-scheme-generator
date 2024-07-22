@@ -59,6 +59,7 @@ header input {
     text-align: center;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 9fr 1fr;
+    /* padding: 0 10rem; */
 }
 
 .color-text {
